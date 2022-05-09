@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <script src="js/all.min.js"></script>
+    <script src="js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fas fa-search-location"></i>
+                <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                <p class="temperature">--</p>
+                <p class="country-name">--</p>
+                <span id="flag"></span>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="value sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="value sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="value"><span class="wind-speed">--</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
